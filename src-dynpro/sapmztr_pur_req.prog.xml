@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0">
+  <PROGRAM>
+    <NAME>SAPMZTR_PUR_REQ</NAME>
+    <SUBC>M</SUBC>
+    <RLOAD> </RLOAD>
+    <FIXPT>X</FIXPT>
+  </PROGRAM>
+</abapGit>

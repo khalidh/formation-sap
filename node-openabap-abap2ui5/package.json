@@ -1,0 +1,22 @@
+{
+  "name": "zcrud-training-openabap-abap2ui5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js execution harness for ABAP logic (open-abap) and abap2UI5 checks",
+  "type": "module",
+  "scripts": {
+    "deps": "npm install",
+    "openabap:transpile": "mkdir -p build && abap_transpile",
+    "openabap:run": "node scripts/run-openabap.mjs",
+    "abap2ui5:lint": "abap2ui5lint abap2ui5/src --no-render --fail-on error",
+    "check": "npm run openabap:run && npm run abap2ui5:lint",
+    "ui:web": "npx -y http-server -p 8080 -c-1 ."
+  },
+  "devDependencies": {
+    "@abap2ui5/linter": "^0.6.1",
+    "@abap2ui5/render-runtime": "^0.6.1",
+    "@abaplint/runtime": "^2.13.86",
+    "@abaplint/transpiler": "^2.13.86",
+    "@abaplint/transpiler-cli": "^2.13.86"
+  }
+}

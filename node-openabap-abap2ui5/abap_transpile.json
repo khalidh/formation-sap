@@ -1,0 +1,16 @@
+{
+  "input_folder": "abap/src",
+  "input_filter": ["\\.abap$"],
+  "output_folder": "build/openabap",
+  "libs": [
+    { "url": "https://github.com/open-abap/open-abap-core" }
+  ],
+  "write_unit_tests": false,
+  "write_source_map": false,
+  "options": {
+    "ignoreSyntaxCheck": false,
+    "addFilenames": true,
+    "addCommonJS": true,
+    "unknownTypes": "compileError"
+  }
+}
